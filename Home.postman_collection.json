@@ -1,0 +1,144 @@
+{
+	"info": {
+		"_postman_id": "fa60480d-daf2-4908-9519-c3407ee6de48",
+		"name": "Home",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "22951964"
+	},
+	"item": [
+		{
+			"name": "CheckConnection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/wedding",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wedding"
+					],
+					"query": [
+						{
+							"key": "",
+							"value": "",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "getAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/wedding/all",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wedding",
+						"all"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "SaveWedding",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"weddingDate\":\"2022-11-10\",\r\n    \"wifeFio\":\"Петрова Юлия Владимировна\",\r\n    \"husbandFio\":\"Петров Дмитрий Олегович\",\r\n    \"price\":35000,\r\n    \"wifeNumber\":\"8918-61-62-768\",\r\n    \"husbandNumber\":\"8918-63-64-645\",\r\n    \"prepayment\":5000,\r\n    \"comment\":\"Фильм на 40 минут\"\r\n    \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/wedding",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wedding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "nearest-wedding",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/wedding/nearest-wedding",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wedding",
+						"nearest-wedding"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteById",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/wedding/4",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wedding",
+						"4"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "my-future-money",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/wedding/my-future-money",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"wedding",
+						"my-future-money"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
